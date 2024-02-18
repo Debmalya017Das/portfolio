@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #6244C5;
+    --primary: #77b71b;    ;
     --secondary: #FFC448;
     --light: #FAFAFB;
     --dark: #12141D;
@@ -46,7 +46,10 @@
     transition: .5s;
 }
 
-.btn.btn-primary,
+.btn.btn-primary{
+    background-color: #77b71b;
+    border-color:#77b71b;;
+}
 .btn.btn-secondary {
     color: #FFFFFF;
 }
@@ -282,7 +285,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(98, 68, 197, .9);
+    background: #16b23f9c;
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
@@ -430,12 +433,12 @@
 }
 
 /* new  added */
-.rounded-tr-\[4rem\] {
+/* .rounded-tr-\[4rem\] {
     border-top-right-radius: 4rem;
 }
 .rounded-bl-\[4rem\] {
     border-bottom-left-radius: 4rem;
-}
+} */
 /* for my image  */
 .image-container {
     transition: transform 0.5s ease-in-out;
@@ -469,3 +472,59 @@
     border-radius: 50%;
   }
   
+  /* #darkModeToggle {*/
+   body {
+    background-color: #fff; /* Default light mode background color */
+    color: #020937; /* Default light mode text color */
+}
+
+.dark-mode {
+    background-color: #0d0042; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
+}
+
+/* Example: change text color of specific elements */
+.dark-mode h1, .dark-mode p ,.dark-mode h3 ,.dark-mode h5,.dark-mode h6{
+    color: #fff; /* Dark mode text color for headings and paragraphs */
+}
+.typed-text {
+    color: #333; /* Default text color for typed-text in light mode */
+}
+
+.dark-mode .typed-text-output,.dark-mode .text-lg-end {
+    color: #fff; /* Dark mode text color for typed-text */
+}
+/* You can extend this pattern for other elements as needed */
+
+.text-primary {
+    color:  #77b71b;
+    /* !important; */
+}
+
+.dot-container {
+    display: flex;
+}
+
+.dot {
+    width: 10px; /* Adjust dot size as needed */
+    height: 10px; /* Adjust dot size as needed */
+    background-color: #77b71b;; /* Adjust dot color as needed */
+    border-radius: 50%;
+    margin-right: 10px; /* Adjust margin between dots as needed */
+}
+
+.shadow-gray-500 {
+    --tw-shadow-color: #6b7280;
+    --tw-shadow: var(--tw-shadow-colored);
+}
+
+
+.map iframe{
+    border-top-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+}
+
+.img-fluid img{
+    border-top-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+}

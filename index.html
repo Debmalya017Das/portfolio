@@ -30,6 +30,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -44,15 +47,15 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-brand d-block d-lg-none">
+        <!-- <a href="index.html" class="navbar-brand d-block d-lg-none">
             <h1 class="text-primary fw-bold m-0">ProMan</h1>
-        </a>
+        </a> -->
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#home" class="nav-item nav-link ">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
                 <a href="#skill" class="nav-item nav-link">Skills</a>
                 <!-- <a href="#service" class="nav-item nav-link">Services</a> -->
@@ -95,7 +98,7 @@
             </div>
         </div>
     </div> -->  
-    <div class="container-fluid bg-light my-8 mt-5 py-8" id="home">
+    <div class="container-fluid my-8 mt-5 py-8" id="home"> <!-- removing bg-light -->
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class=" py-6 pb-0 pt-lg-0 text-center"><!--  tagged -->
@@ -121,9 +124,10 @@
                     </div> -->
                     <!-- icons  -->
                     <div class="social-icons position-absolute top-0 end-0 p-3">
-                        <a class="btn btn-dark-mode rounded-circle" id="darkModeToggle" href="#">
+                        <a class="btn btn-dark-mode rounded-circle" id="dark-mode-toggle" href="#">
                             <i class="fas fa-moon"></i>
                           </a>
+                          
                         <div class="btn-group" role="group">                     
                               
                             <a class="btn btn-primary rounded-circle me-2" href="https://www.linkedin.com/in/debmalya-das-b1b168247/"><i class="fab fa-linkedin-in"></i></a>
@@ -144,7 +148,7 @@
  
 
     <!-- Video Modal Start -->
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
@@ -152,17 +156,26 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
+                     16:9 aspect ratio -->
+                    <!-- <div class="ratio ratio-16x9">
                         <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
                             allow="autoplay"></iframe>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> --> 
     <!-- Video Modal End -->
-
+    <!-- divider -->
+    <div class="dot-container d-flex justify-content-center">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
 
     <!-- About Start -->
     <div class="container-xxl py-4" id="about">
@@ -217,7 +230,15 @@
     </div>
     <!-- About End -->
 
-
+    <div class="dot-container d-flex justify-content-center">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
     <!-- Expertise Start -->
     <div class="container-xxl py-6 pb-5" id="skill">
         <div class="container">
@@ -309,12 +330,12 @@
                                     <p class="text-primary mb-1">2021 - 2025 </p>
                                     <h6 class="mb-0">Heritage Institute of Technology</h6>
                                 </div>
-                                <div class="col-sm-6">
-                                    <!-- <h5>Apps Design</h5>
+                                <!-- <div class="col-sm-6">
+                                     <h5>Apps Design</h5>
                                     <hr class="text-primary my-2">
                                     <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6> -->
-                                </div>
+                                    <h6 class="mb-0">Cambridge University</h6> 
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -389,7 +410,15 @@
         </div>
     </div> -->
     <!-- Service End -->
-
+    <div class="dot-container d-flex justify-content-center">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
 
     <!-- Projects Start -->
     <div class="container-xxl py-6 pt-5" id="project">
@@ -554,7 +583,7 @@
                                     <i class="fa fa-quote-left text-primary"></i>
                                 </div>
                             </div>
-                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <p class="fs-5 fst-italic">Dolores sed duo clita tprempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
                             <hr class="w-25 mx-auto">
                             <h5>Client Name</h5>
                             <span>Profession</span>
@@ -584,7 +613,15 @@
         </div>
     </div> -->
     <!-- Testimonial End -->
-
+    <div class="dot-container d-flex justify-content-center">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
 
     <!-- Contact Start -->
     <div class="container-xxl pb-5" id="contact">
@@ -613,12 +650,15 @@
                 </div>
                 <!-- mt-1 for lifting map up -->
                 <div class="col-lg-7 col-md-5 wow fadeInUp mt-0" data-wow-delay="0.3s"> 
-                    <div class="container-xxl pt-5 px-0">
-                        <div class="bg-dark">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d10633.796935716897!2d88.42926763967205!3d22.97502090320981!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDU4JzQ1LjYiTiA4OMKwMjUnMzQuMCJF!5e0!3m2!1sen!2sin!4v1708098679944!5m2!1sen!2sin" 
-                            frameborder="0" style="width: 100%; height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
-                            tabindex="0"></iframe>
+                    <div class="container-xxl pt-5 px-0 rounded-t1-[4rem] rounded-br-[4rem]">
+                        
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d10633.796935716897!2d88.42926763967205!3d22.97502090320981!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDU4JzQ1LjYiTiA4OMKwMjUnMzQuMCJF!5e0!3m2!1sen!2sin!4v1708098679944!5m2!1sen!2sin" 
+                                frameborder="0" style="width: 100%; height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
+                                tabindex="0"></iframe>
+                
                         </div>
+                        
                     </div>
                 </div>
                 
@@ -685,8 +725,8 @@
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom text-secondary" href="https://htmlcodex.com">Debmalya Das</a>
-<!--                         <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank"></a> -->
+                        Designed By <a class="border-bottom text-secondary" href="https://htmlcodex.com">HTML Codex</a>
+                        <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
                     </div>
                 </div>
             </div>
@@ -710,6 +750,7 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="js/index.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
