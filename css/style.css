@@ -235,7 +235,10 @@
 }
 
 #skill .nav-pills .nav-link {
-    color: var(--dark);
+    color: black;
+}
+.dark-mode #skill .nav-pills .nav-link {
+    color: white;
 }
 
 #skill .nav-pills .nav-link.active {
@@ -264,6 +267,14 @@
     display: inline-block;
     font-weight: 500;
     color: var(--dark);
+    cursor: pointer;
+    transition: .5s;
+    border-bottom: 2px solid transparent;
+}
+.dark-mode #portfolio-flters li {
+    display: inline-block;
+    font-weight: 500;
+    color: white;
     cursor: pointer;
     transition: .5s;
     border-bottom: 2px solid transparent;
@@ -527,4 +538,17 @@
 .img-fluid img{
     border-top-right-radius: 4rem;
     border-bottom-left-radius: 4rem;
+}
+
+/* .dark-mode .logo {
+    filter: invert(1);
+    /* color: white; */
+ */
+.logo {
+    /* font-size: 24px; Adjust as needed */
+    transition: color 0.3s ease;
+    color: white; /* Set the color to white */
+}
+.dark-mode .logo {
+    color: white; /* Adjust as needed */
 }
