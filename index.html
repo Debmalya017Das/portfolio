@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-     <link href="img/favicon_io/favicon.ico" rel="icon">
+    <link href="img/favicon_io/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +32,8 @@
     <link href="css/style.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Mr+h2LBEfNiv3J/sUpOZy99KNYh1fkT2Pux73nJnA4k2BqdwkmxnxjvEYGY2SZBNuGvK+LoyeD/4C4sn23qcAQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Mr+h2LBEfNiv3J/sUpOZy99KNYh1fkT2Pux73nJnA4k2BqdwkmxnxjvEYGY2SZBNuGvK+LoyeD/4C4sn23qcAQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -133,8 +134,12 @@
                               
                             <a class="btn btn-primary rounded-circle me-2" href="https://www.linkedin.com/in/debmalya-das-b1b168247/"><i class="fab fa-linkedin-in"></i></a>
                             <a class="btn btn-primary rounded-circle me-2" href="https://github.com/Debmalya017Das"><i class="fab fa-github"></i></a>
-                            <a class="btn btn-primary rounded-circle me-2" href="https://www.instagram.com/debmalya017/"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-primary rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                            <!-- <a class="btn btn-primary rounded-circle me-2" href="https://www.instagram.com/debmalya017/"><i class="cib-leetcode"></i></a> -->
+                            <!-- <a class="btn btn-primary rounded-circle" href=""><i class="fab fa-twitter"></i></a> -->
+                            <a class="btn btn-primary rounded-circle me-2" href="https://leetcode.com/Debmalya_017/">
+                                <img src="img/lc.svg" alt="LeetCode Icon" width="17" height="26">
+                            </a>
+                            
                             
                         </div>
                     </div>                   
@@ -636,7 +641,52 @@
                 </div>
             </div>
             <div class="row g-5">
-                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <p class="mb-4"></p>
+                    <form class="pad" id="con">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name" class="c-la">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email" class="c-la">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="subject" class="c-la">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <label for="message" class="c-la">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                            </div>
+                        </div> 
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-5 wow fadeInUp" data-wow-delay="0.3s"> 
+                    <div class="container-xxl pt-4 px-0 rounded-t1-[4rem] rounded-br-[4rem]">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d10633.796935716897!2d88.42926763967205!3d22.97502090320981!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDU4JzQ1LjYiTiA4OMKwMjUnMzQuMCJF!5e0!3m2!1sen!2sin!4v1708098679944!5m2!1sen!2sin" frameborder="0" style="width: 100%; height: 350px; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="mb-2">Residence:</p>
                     <h3 class="fw-bold">B-2/47, Kalyani</h3>
                     <hr class="w-100">
@@ -646,60 +696,9 @@
                     <p class="mb-2">Mail me:</p>
                     <h3 class="fw-bold">deb.das.raja017@gmail.com</h3>
                     <hr class="w-100">
-                    <!-- <p class="mb-2">Follow me:</p> -->
+                     <p class="mb-2">Follow me:</p> 
                    
-                </div>
-                <!-- mt-1 for lifting map up -->
-                <div class="col-lg-7 col-md-5 wow fadeInUp mt-0" data-wow-delay="0.3s"> 
-                    <div class="container-xxl pt-5 px-0 rounded-t1-[4rem] rounded-br-[4rem]">
-                        
-                            <div class="map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d10633.796935716897!2d88.42926763967205!3d22.97502090320981!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDU4JzQ1LjYiTiA4OMKwMjUnMzQuMCJF!5e0!3m2!1sen!2sin!4v1708098679944!5m2!1sen!2sin" 
-                                frameborder="0" style="width: 100%; height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
-                                tabindex="0"></iframe>
-                
-                        </div>
-                        
-                    </div>
-                </div>
-                
-                <!-- <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
-                            </div>
-                        </div> -->
-                    <!-- </form>
                 </div> -->
-            </div>
-        </div>
-    </div>
     <!-- Contact End -->
 
 
@@ -754,6 +753,14 @@
     <script src="js/index.js"></script>
 
     <!-- Template Javascript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script> -->
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <<script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js"></script>
+    
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="js/main.js"></script>
 </body>
 

@@ -552,3 +552,7 @@
 .dark-mode .logo {
     color: white; /* Adjust as needed */
 }
+
+.dark-mode .c-la{
+    color:black;
+}
