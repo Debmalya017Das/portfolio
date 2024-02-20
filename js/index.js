@@ -31,3 +31,12 @@ document.addEventListener('DOMContentLoaded', function () {
         logo.classList.remove('fa-moon');
     }
 });
+
+
+document.getElementById('name').addEventListener('submit',send);
+
+function send(e){
+    e.preventDefault();
+
+    console.log(123);
+}
