@@ -558,21 +558,114 @@
 }
 
 
-.carousel-item .team-item {
+.owl-carousel  .item{
     height: 100%; /* Ensure all team item containers have the same height */
     border: 2px solid #ddd; /* Add a border around the team item */
     border-radius: 10px; /* Add rounded corners */
     overflow: hidden; /* Hide overflowing content (if any) */
 }
 
-.carousel-item .team-item .img-fluid {
+.owl-carousel .item {
     width: 100%; /* Make images fill their containers */
     height: 100%; /* Make images fill their containers */
-    object-fit: cover; /* Maintain aspect ratio */
+    object-fit:cover; /* Maintain aspect ratio */
+    /* height: 19rem; */
 }
-
 
 /* Additional styles for demonstration */
-.carousel-inner {
-    height: 302px; /* Set a fixed height for the carousel */
+
+
+.owl-prev, .owl-next {
+    font-size: 24px;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
+/* Customize the dots navigation */
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Customize the dots */
+.owl-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+.item :hover{
+    transform: translateY(-2px) scale(1) skewY(1deg);
+    transition-duration: 0.5s;
+}
+.subhead{
+    padding-left: 10px;
+}
+
+/* <!-- <div id="team-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="team-item position-relative">
+                                    <img class="img-fluid " src="img/5.jpg" alt="">
+                                    <div class="portfolio-btn">
+                                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="team-item position-relative">
+                                    <img class="img-fluid " src="img/2.jpg" alt="">
+                                    <div class="portfolio-btn">
+                                        <a class="btn btn-lg-square btn-outline-secondary rounded" href="img/2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="team-item position-relative">
+                                    <img class="img-fluid " src="img/1.jpg" alt="">
+                                    <div class="portfolio-btn">
+                                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- Additional carousel items for the remaining team members -->
+                    <!-- For simplicity, let's assume each carousel item contains 3 team members -->
+                    <!--<div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 col-sm-6" >
+                                <div class="team-item position-relative">
+                                    <img class="img-fluid " src="img/3.jpg" alt="zyz">
+                                    <div class="portfolio-btn">
+                                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                     </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="carousel-item">
+                            <div class="col-lg-4 col-md-6 col-sm-6" >
+                                <div class="team-item position-relative">
+                                    <img class="img-fluid " src="img/4.jpg" alt="xyz">
+                                    <div class="portfolio-btn">
+                                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+               
+            </div> --> */
