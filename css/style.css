@@ -2,7 +2,7 @@
 :root {
     --primary: #77b71b;    ;
     --secondary: #FFC448;
-    --light: #FAFAFB;
+    --light: #c8c8d0;
     --dark: #12141D;
 }
 
@@ -452,7 +452,7 @@
 } */
 /* for my image  */
 .image-container {
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease;
 }
 
 .image-container:hover {
@@ -555,4 +555,24 @@
 
 .dark-mode .c-la{
     color:black;
+}
+
+
+.carousel-item .team-item {
+    height: 100%; /* Ensure all team item containers have the same height */
+    border: 2px solid #ddd; /* Add a border around the team item */
+    border-radius: 10px; /* Add rounded corners */
+    overflow: hidden; /* Hide overflowing content (if any) */
+}
+
+.carousel-item .team-item .img-fluid {
+    width: 100%; /* Make images fill their containers */
+    height: 100%; /* Make images fill their containers */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+
+/* Additional styles for demonstration */
+.carousel-inner {
+    height: 302px; /* Set a fixed height for the carousel */
 }
