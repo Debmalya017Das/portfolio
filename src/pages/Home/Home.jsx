@@ -4,6 +4,7 @@ import Footer from '../../components/footer/footer'
 import Front from '../../components/front/front'
 import Particles from '../../components/particles'
 import banner from '../../assets/banner.jpg'
+import Skills from '../../components/skills/skills'
 
 function Home() {
   return (
@@ -43,6 +44,7 @@ function Home() {
         maxWidth: '100vw'}}>
         <Navbar/>
         <Front/>
+        <Skills/>
         <Footer/>
       </div>
     </div>
